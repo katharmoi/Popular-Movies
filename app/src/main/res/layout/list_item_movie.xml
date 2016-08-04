@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/movie_grid_cell_padding">
+
+    <ImageView
+        android:id="@+id/list_item_movie_icon"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_poster_height"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        android:src="@drawable/poster_placeholder_large"
+        android:background="@color/grid_bg"/>
+
+    <TextView
+        android:id="@+id/list_item_movie_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_item_movie_icon"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:lines="2"
+        android:maxLines="2"
+        android:paddingLeft="@dimen/movie_grid_text_padding"
+        android:paddingRight="@dimen/movie_grid_text_padding"
+        android:background="@color/grid_bg" />
+
+
+    <TextView
+        android:id="@+id/list_item_movie_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/list_item_movie_name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/grid_bg"
+        android:paddingLeft="@dimen/movie_grid_text_padding"
+        android:paddingRight="@dimen/movie_grid_text_padding"
+        />
+
+</RelativeLayout>

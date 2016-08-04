@@ -1,0 +1,13 @@
+<GridView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:columnWidth="@dimen/movie_grid_cell_width"
+    android:stretchMode="columnWidth"
+    android:verticalSpacing="@dimen/movie_grid_vert_spacing"
+    android:horizontalSpacing="@dimen/movie_grid_horiz_spacing"
+    android:numColumns="auto_fit"
+    android:id="@+id/movies_grid"
+    tools:context="com.kadirkertis.popularmovies.MoviesFragment"
+    />
