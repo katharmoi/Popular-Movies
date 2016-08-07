@@ -18,6 +18,11 @@ import java.util.List;
 public class MovieInfoAdapter extends ArrayAdapter<MovieInfo> {
     private static final String LOG_TAG = MovieInfoAdapter.class.getSimpleName();
 
+    static class ViewHolder{
+        TextView nameHolder;
+        TextView rateHolder;
+        ImageView posterHolder;
+    }
     public MovieInfoAdapter(Activity context, List<MovieInfo> movieInfos){
         super(context,0,movieInfos);
     }
@@ -26,23 +31,26 @@ public class MovieInfoAdapter extends ArrayAdapter<MovieInfo> {
     public View getView(int position, View convertView, ViewGroup parent) {
         //Iterating the Adapter
         MovieInfo movieInfo = getItem(position);
-
+        ViewHolder viewHolder;
         // Adapters recycle views to AdapterViews.
         // If this is a new View object we're getting, then inflate the layout.
         // If not, this view already has the layout inflated from a previous call to getView,
         // and we modify the View widgets as usual.
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item_movie, parent, false);
+            viewHolder = new ViewHolder();
+            viewHolder.nameHolder = (TextView) convertView.findViewById(R.id.list_item_movie_name);
+            viewHolder.rateHolder = (TextView) convertView.findViewById(R.id.list_item_movie_rating);
+            viewHolder.posterHolder = (ImageView) convertView.findViewById(R.id.list_item_movie_icon);
+            convertView.setTag(viewHolder);
+        }
+        else{
+            viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        ImageView iconView = (ImageView) convertView.findViewById(R.id.list_item_movie_icon);
-        Picasso.with(getContext()).load(movieInfo.getImageResource()).into(iconView);
-
-        TextView versionNameView = (TextView) convertView.findViewById(R.id.list_item_movie_name);
-        versionNameView.setText(movieInfo.getName());
-
-        TextView versionNumberView = (TextView) convertView.findViewById(R.id.list_item_movie_rating);
-        versionNumberView.setText(movieInfo.getRating());
+        Picasso.with(getContext()).load(movieInfo.getImageResource()).into(viewHolder.posterHolder);
+        viewHolder.nameHolder.setText(movieInfo.getName());
+        viewHolder.rateHolder.setText(movieInfo.getRating());
         return convertView;
     }
 }

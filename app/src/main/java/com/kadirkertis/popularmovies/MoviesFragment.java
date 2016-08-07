@@ -250,6 +250,7 @@ public class MoviesFragment extends Fragment {
             netDialog = new ProgressDialog(getActivity());
             netDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
             netDialog.setTitle(getString(R.string.progress_title));
+            netDialog.setMessage(getString(R.string.progres_message));
             netDialog.show();
         }
 
