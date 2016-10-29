@@ -7,7 +7,11 @@
     <dimen name="movie_grid_horiz_spacing">1dp</dimen>
     <dimen name="movie_grid_cell_padding">1dp</dimen>
     <dimen name="movie_grid_text_padding">2dp</dimen>
-    <dimen name="list_poster_height">150dp</dimen>
+    <dimen name="list_poster_height">200dp</dimen>
     <dimen name="details_poster_height">150dp</dimen>
     <dimen name="details_poster_width">100dp</dimen>
+    <dimen name="ab_border_width">2dp</dimen>
+    <dimen name="details_icons_height">48dp</dimen>
+    <dimen name="details_icons_width">48dp</dimen>
+    <dimen name="login_btn_margin">16dp</dimen>
 </resources>

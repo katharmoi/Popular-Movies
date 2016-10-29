@@ -50,7 +50,7 @@ public class MovieInfoAdapter extends ArrayAdapter<MovieInfo> {
 
         Picasso.with(getContext()).load(movieInfo.getImageResource()).into(viewHolder.posterHolder);
         viewHolder.nameHolder.setText(movieInfo.getName());
-        viewHolder.rateHolder.setText(movieInfo.getRating());
+        viewHolder.rateHolder.setText(String.format("%1$.1f",movieInfo.getRating()));
         return convertView;
     }
 }
