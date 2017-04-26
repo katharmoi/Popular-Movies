@@ -2,7 +2,7 @@
 
 Popular Movies uses The Movie Database (TMDb) API to get and present user with popular and highly rated movies data on the web.
 # Used APIs 
-Implemented using custom Content Provider,Loader, Sqlite ,SyncAdapter, Volley and Search Interface supporting custom suggestions.
+Implemented using custom Content Provider,Loader, Sqlite ,SyncAdapter, Volley, Notifications and Search Interface supporting custom suggestions.
 
 # Features
 - Lowers network traffic by adapting sync adapters and content providers.
