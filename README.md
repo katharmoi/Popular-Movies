@@ -13,9 +13,9 @@ Implemented using custom Content Provider,Loader, Sqlite ,SyncAdapter, Volley an
 - Provides custom search & suggestions for movies
 
 # Screens
-![alt tag](https://cloud.githubusercontent.com/assets/18499393/25454654/ebad992a-2ad5-11e7-8b10-00a8b724c793.png)
-![alt tag](https://cloud.githubusercontent.com/assets/18499393/25454661/f0d85fac-2ad5-11e7-81e4-8666e4c6a397.png)
-![alt tag](https://cloud.githubusercontent.com/assets/18499393/25454664/f4ec155c-2ad5-11e7-93c7-2f94eb8ba1c2.png)
-![alt tag](https://cloud.githubusercontent.com/assets/18499393/25454669/f86d6d7a-2ad5-11e7-864f-e304204821ce.png)
-![alt tag](https://cloud.githubusercontent.com/assets/18499393/25454672/fafe363c-2ad5-11e7-996e-7cccbcc4d5c9.png)
-![alt tag](https://cloud.githubusercontent.com/assets/18499393/25454676/fdc56070-2ad5-11e7-8aaf-6edbd39b464b.png)
+![alt tag](https://cloud.githubusercontent.com/assets/18499393/25460467/4b78fab4-2aec-11e7-8c1c-5f2b4b412e2a.png)
+![alt tag](https://cloud.githubusercontent.com/assets/18499393/25460470/526a5e1c-2aec-11e7-9029-b50a813c2c49.png)
+![alt tag](https://cloud.githubusercontent.com/assets/18499393/25460476/57863d44-2aec-11e7-836e-683eb9fad32c.png)
+![alt tag](https://cloud.githubusercontent.com/assets/18499393/25460480/5b11e6f2-2aec-11e7-8011-1f697a36a37e.png)
+![alt tag](https://cloud.githubusercontent.com/assets/18499393/25460483/5eabc59e-2aec-11e7-9bd6-d750dfea41c1.png)
+![alt tag](https://cloud.githubusercontent.com/assets/18499393/25460485/60b3f79e-2aec-11e7-9202-58b639e5cdbf.png)
