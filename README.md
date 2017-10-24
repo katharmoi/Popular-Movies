@@ -1,4 +1,4 @@
-# Popular Movies
+# Movvy
 
 Popular Movies uses The Movie Database (TMDb) API to get and present user with popular and highly rated movies data on the web.
 # Used APIs 
